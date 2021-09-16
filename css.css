@@ -157,11 +157,20 @@ transition: transform 500ms ease-in-out;
     border-color: #ff6d00;    
 }
 
+/*
 .card:hover .card-back{
- transform: rotateY(-180deg);
 }
 
 .card:hover .card-front{
+    transform: rotateY(0);
+}
+*/
+
+.flip1{
+    transform: rotateY(-180deg);
+}
+
+.flip2{
     transform: rotateY(0);
 }
    
@@ -242,3 +251,6 @@ transition: transform 500ms ease-in-out;
 }
 
 /* End Responsive */
+.removeCard{
+  visibility: hidden;
+}
